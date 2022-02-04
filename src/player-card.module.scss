@@ -1,0 +1,32 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  width: 300px;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+
+  &__debtMaster {
+    background-color: #FDFD96;
+    color: black;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+
+  .name {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    &__selected {
+      color: greenyellow
+    }
+    &__doubleSelected {
+      color: aqua
+    }
+  }
+}
